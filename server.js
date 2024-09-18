@@ -5,13 +5,12 @@ import { createServer } from "http"
 import cors from 'cors';
 
 import  createDbConnection  from "./core/confige/db.config.js";
-import medicalHistoryVaultRouter from "./app/medical-history-vault/medical-history-vault.route.js";
+
 import { EventBusFactory } from "./service/EventBus/EventBusFactory.js";
 import OrderStartedIntegrationEventHandler from "./app/medical-history-vault/MessageBroker/EventsHandlers/OrderStartedIntegrationEventHandler.js";
 import * as bodyParser from "body-parser";
 import { OrderStartedIntegrationEvent } from "./app/medical-history-vault/MessageBroker/Events/OrderStartedIntegrationEvent.js";
 import { EventBusConfig } from "./core/EventBus/EventBusConfig.js";
-import { OrderPaymentSuccessIntegrationEvent } from "./app/medical-history-vault/MessageBroker/Events/OrderPaymentSuccessIntegrationEvent.js";
 
 import { serviceProvider } from "./shared/core/ServiceProvider.js";
 import OrderPaymentSuccessIntegrationEventHandler from "./app/medical-history-vault/MessageBroker/EventsHandlers/OrderPaymentSuccessIntegrationEventHandler.js";
