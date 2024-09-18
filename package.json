@@ -1,0 +1,28 @@
+{
+  "name": "medical-history-vault",
+  "version": "0.0.0",
+  "description": "MedicalHistoryVault",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {},
+  "dependencies": {
+    "@azure/arm-servicebus": "^6.1.0",
+    "@azure/identity": "^4.4.1",
+    "@azure/service-bus": "^7.9.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.12.3",
+    "mongoose": "^8.3.2"
+  }
+}
